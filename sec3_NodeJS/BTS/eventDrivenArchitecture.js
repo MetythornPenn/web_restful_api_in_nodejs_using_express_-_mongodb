@@ -8,14 +8,12 @@ eventEmitter.on('myEvent', () => {
     console.log('myEvent');
 })
 
-// this is the event handler for the myEvent2
-eventEmitter.emit('myEvent');
-
-// firing the connection event 
-eventEmitter.on('myEvent', () => {
-    console.log('myEvent2');
+eventEmitter.on('myEvent2', () => {
+    console.log('this is myEvent2');
 })
 
+// this is the event handler for the myEvent2
+eventEmitter.emit('myEvent');
 
 
 
